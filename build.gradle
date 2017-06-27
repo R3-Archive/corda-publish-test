@@ -1,0 +1,44 @@
+buildscript {
+    ext.kotlin_version = '1.1.1'
+    ext.corda_version = '0.13.0'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'kotlin'
+
+repositories {
+    if(!project.hasProperty('corda.disableArtifactory')) {
+        maven { url 'https://ci-artifactory.corda.r3cev.com/artifactory/corda' }
+    }
+    jcenter()
+    mavenCentral()
+    maven { url 'https://dl.bintray.com/kotlin/exposed' }
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    compile "net.corda:corda:$corda_version"
+    compile "net.corda:corda-jfx:$corda_version"
+    compile "net.corda:corda-mock:$corda_version"
+    compile "net.corda:corda-rpc:$corda_version"
+    compile "net.corda:corda-core:$corda_version"
+    compile "net.corda:corda:$corda_version"
+    compile "net.corda:cordform-common:$corda_version"
+    compile "net.corda:corda-finance:$corda_version"
+    compile "net.corda:corda-node:$corda_version"
+    compile "net.corda:corda-node-api:$corda_version"
+    compile "net.corda:corda-node-schemas:$corda_version"
+    compile "net.corda:corda-test-utils:$corda_version"
+    compile "net.corda:corda-jackson:$corda_version"
+    compile "net.corda:corda-verifier:$corda_version"
+    compile "net.corda:corda-webserver-impl:$corda_version"
+    compile "net.corda:corda-webserver:$corda_version"
+}
+
