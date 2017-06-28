@@ -30,7 +30,6 @@ dependencies {
     compile "net.corda:corda-rpc:$corda_version"
     compile "net.corda:corda-core:$corda_version"
     compile "net.corda:corda:$corda_version"
-    compile "net.corda:cordform-common:$corda_version"
     compile "net.corda:corda-finance:$corda_version"
     compile "net.corda:corda-node:$corda_version"
     compile "net.corda:corda-node-api:$corda_version"
