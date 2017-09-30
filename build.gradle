@@ -33,7 +33,6 @@ dependencies {
     compile "net.corda:corda-finance:$corda_version"
     compile "net.corda:corda-node:$corda_version"
     compile "net.corda:corda-node-api:$corda_version"
-    compile "net.corda:corda-node-schemas:$corda_version"
     compile "net.corda:corda-test-utils:$corda_version"
     compile "net.corda:corda-jackson:$corda_version"
     compile "net.corda:corda-verifier:$corda_version"
