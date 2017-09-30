@@ -39,6 +39,6 @@ dependencies {
     compile "net.corda:corda-webserver-impl:$corda_version"
     compile "net.corda:corda-webserver:$corda_version"
     compile "net.corda:corda-node-driver:$corda_version"
-    compile "net.corda:corda-confidential-identities$corda_version"
+    compile "net.corda:corda-confidential-identities:$corda_version"
 }
 
