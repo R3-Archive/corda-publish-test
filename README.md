@@ -9,11 +9,11 @@ processes, b) to avoid any sort of interference between gradle builds that may m
 
 ## Usage
 
-To test Artifactory:
+To test Artifactory (doesn't test JCenter or Maven Central):
 
     ./gradlew --refresh-dependencies clean build
     
-To test without Artifactory:
+To test JCenter (without Artifactory):
 
     ./gradlew --refresh-dependencies -Pcorda.disableArtifactory clean build
     
